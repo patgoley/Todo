@@ -36,7 +36,10 @@ platform :ios do
     
     clean_build_artifacts
     
-    match(type: "appstore")
+    match(
+      type: "appstore",
+      readonly: is_ci
+    )
     
     increment_build_number
     
@@ -66,7 +69,10 @@ platform :ios do
     scheme = "appstore"
     workspace = "fastlanetodo.xcworkspace"
     
-    match(type: "appstore")
+    match(
+      type: "appstore",
+      readonly: is_ci
+    )
     
     snapshot(
       scheme: scheme,
