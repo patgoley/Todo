@@ -39,6 +39,7 @@ platform :ios do
     match(type: "appstore")
     
     increment_build_number
+    
     buildNumber = get_build_number(xcodeproj: "fastlanetodo.xcodeproj")
     
     gym(
@@ -53,7 +54,9 @@ platform :ios do
       message: "Version Bump to #{buildNumber} [ci-skip]",
       force: true
     )
+    
     add_git_tag(tag: "Build_#{buildNumber}")
+    
     push_to_git_remote
   end
 
@@ -72,6 +75,7 @@ platform :ios do
   end
 
   after_all do |lane|
+    
       if is_ci
         hipchat(
           message: "#{lane} lane successful!"
@@ -82,8 +86,9 @@ platform :ios do
   end
 
   error do |lane, exception|
+    
     puts "failing error: #{exception.message}"
-    puts "backtrace: #{exception.backtrace}"
+    
     if is_ci
       hipchat(
         message: exception.message,
