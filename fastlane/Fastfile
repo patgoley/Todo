@@ -34,7 +34,7 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   lane :beta do
     
-    scan(scheme: "fastlanetodo")
+    #scan(scheme: "fastlanetodo")
     
     clean_build_artifacts
     
