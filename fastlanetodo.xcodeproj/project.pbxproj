@@ -537,7 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.fastlanetodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlanetodo.app/fastlanetodo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todo.app/Todo";
 			};
 			name = Debug;
 		};
@@ -550,7 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.fastlanetodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlanetodo.app/fastlanetodo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todo.app/Todo";
 			};
 			name = Release;
 		};
@@ -618,7 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.fastlanetodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlanetodo.app/fastlanetodo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todo.app/Todo";
 			};
 			name = AppStore;
 		};
@@ -700,6 +700,7 @@
 				8EEA99331C58BBAD00D29299 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
