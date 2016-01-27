@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					8EEA98E41C58A68C00D29299 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = EAK72Y5DPH;
 					};
 					8EEA98FD1C58A68C00D29299 = {
 						CreatedOnToolsVersion = 7.2;
@@ -516,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 28;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = fastlanetodo/Info.plist;
