@@ -49,13 +49,13 @@ platform :ios do
     
     output_dir = if is_ci then "./build" else "./build/#{buildNumber}" end
     
-    gym(
-      workspace: "fastlanetodo.xcworkspace",
-      scheme: "appstore",
-      output_directory: output_dir
-    )
+    #gym(
+    #  workspace: "fastlanetodo.xcworkspace",
+    #  scheme: "appstore",
+    #  output_directory: output_dir
+    #)
     
-    pilot
+    #pilot
     
     commit_version_bump(
       message: "Version Bump to #{buildNumber} [ci-skip]",
