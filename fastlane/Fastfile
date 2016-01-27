@@ -34,6 +34,8 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   lane :beta do
     
+    scan(scheme: "fastlanetodo")
+    
     clean_build_artifacts
     
     match(
@@ -45,10 +47,12 @@ platform :ios do
     
     buildNumber = get_build_number(xcodeproj: "fastlanetodo.xcodeproj")
     
+    output_dir = if is_ci then "./build" else "./build/#{buildNumber}" end
+    
     gym(
       workspace: "fastlanetodo.xcworkspace",
       scheme: "appstore",
-      output_directory: "./build/#{buildNumber}"
+      output_directory: output_dir
     )
     
     pilot

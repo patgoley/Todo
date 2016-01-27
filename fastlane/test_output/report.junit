@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites tests='2' failures='0'>
-  <testsuite name='fastlanetodoTests' tests='2' failures='0'>
-    <testcase classname='fastlanetodoTests' name='testExample' time='0.001'/>
-    <testcase classname='fastlanetodoTests' name='testPerformanceExample' time='0.267'/>
-  </testsuite>
-</testsuites>

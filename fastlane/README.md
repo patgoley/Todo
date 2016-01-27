@@ -16,11 +16,11 @@ Runs all the tests
 fastlane ios beta
 ```
 Submit a new Beta Build to Apple TestFlight
-### ios appstore
+### ios screens
 ```
-fastlane ios appstore
+fastlane ios screens
 ```
-Deploy a new version to the App Store
+Take screenshots on all devices
 
 ----
 
