@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EEA98E41C58A68C00D29299"
-               BuildableName = "fastlanetodo.app"
+               BuildableName = "Todo.app"
                BlueprintName = "fastlanetodo"
                ReferencedContainer = "container:fastlanetodo.xcodeproj">
             </BuildableReference>
@@ -28,12 +28,32 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8EEA99131C58B62400D29299"
+               BuildableName = "fastlanetodoUITests.xctest"
+               BlueprintName = "fastlanetodoUITests"
+               ReferencedContainer = "container:fastlanetodo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8EEA99281C58BBAD00D29299"
+               BuildableName = "TodoUITests.xctest"
+               BlueprintName = "TodoUITests"
+               ReferencedContainer = "container:fastlanetodo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EEA98E41C58A68C00D29299"
-            BuildableName = "fastlanetodo.app"
+            BuildableName = "Todo.app"
             BlueprintName = "fastlanetodo"
             ReferencedContainer = "container:fastlanetodo.xcodeproj">
          </BuildableReference>
@@ -56,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EEA98E41C58A68C00D29299"
-            BuildableName = "fastlanetodo.app"
+            BuildableName = "Todo.app"
             BlueprintName = "fastlanetodo"
             ReferencedContainer = "container:fastlanetodo.xcodeproj">
          </BuildableReference>
@@ -75,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EEA98E41C58A68C00D29299"
-            BuildableName = "fastlanetodo.app"
+            BuildableName = "Todo.app"
             BlueprintName = "fastlanetodo"
             ReferencedContainer = "container:fastlanetodo.xcodeproj">
          </BuildableReference>

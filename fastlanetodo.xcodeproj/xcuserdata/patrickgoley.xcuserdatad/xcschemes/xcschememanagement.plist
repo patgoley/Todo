@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>fastlanetodoUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>8EEA98FD1C58A68C00D29299</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EEA99131C58B62400D29299</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EEA99281C58BBAD00D29299</key>
 		<dict>
 			<key>primary</key>
 			<true/>

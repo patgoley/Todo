@@ -19,6 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODO: Make app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUZ-M4-fff">
                                 <rect key="frame" x="155" y="159" width="291" height="282"/>
+                                <accessibility key="accessibilityConfiguration" label="label"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="282" id="16G-ZT-oLt"/>
                                     <constraint firstAttribute="width" constant="291" id="qSq-gW-Snj"/>

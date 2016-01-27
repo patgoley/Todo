@@ -23,7 +23,6 @@ default_platform :ios
 platform :ios do
 
   before_all do
-    ENV["HIPCHAT_API_TOKEN"] = "hZWpu8Ovl6q4ktMIUl00kANM44k9wOIPlE6hWTMO"
     cocoapods
   end
 
@@ -40,33 +39,36 @@ platform :ios do
     match(type: "appstore")
     
     increment_build_number
-    build = get_build_number(xcodeproj: "fastlanetodo.xcodeproj")
+    buildNumber = get_build_number(xcodeproj: "fastlanetodo.xcodeproj")
     
     gym(
       workspace: "fastlanetodo.xcworkspace",
       scheme: "appstore",
-      output_directory: "./build/#{build}"
+      output_directory: "./build/#{buildNumber}"
     )
+    
     pilot
     
     commit_version_bump(
-      message: "Version Bump to #{build} [ci-skip]",
+      message: "Version Bump to #{buildNumber} [ci-skip]",
       force: true
     )
-    add_git_tag(tag: "Build_#{build}")
+    add_git_tag(tag: "Build_#{buildNumber}")
     push_to_git_remote
   end
 
-  desc "Deploy a new version to the App Store"
-  lane :appstore do
+  desc "Take screenshots on all devices"
+  lane :screens do
+    
+    scheme = "appstore"
+    workspace = "fastlanetodo.xcworkspace"
+    
     match(type: "appstore")
-    snapshot
-    gym(
-      workspace: "fastlanetodo.xcworkspace",
-      scheme: "appstore",
-      output_directory: "./build/#{build}-appstore"
+    
+    snapshot(
+      scheme: scheme,
+      workspace: workspace
     )
-    deliver(force: true)
   end
 
   after_all do |lane|
@@ -90,7 +92,6 @@ platform :ios do
     else
       notification(subtitle: exception.message, message: "Build failed")
     end
-    
   end
 end
 
