@@ -34,7 +34,7 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   lane :beta do
     
-    #scan(scheme: "fastlanetodo")
+    scan(scheme: "fastlanetodo")
     
     clean_build_artifacts
     
@@ -49,13 +49,13 @@ platform :ios do
     
     output_dir = if is_ci then "./build" else "./build/#{buildNumber}" end
     
-    #gym(
-    #  workspace: "fastlanetodo.xcworkspace",
-    #  scheme: "appstore",
-    #  output_directory: output_dir
-    #)
+    gym(
+      workspace: "fastlanetodo.xcworkspace",
+      scheme: "appstore",
+      output_directory: output_dir
+    )
     
-    #pilot
+    pilot
     
     commit_version_bump(
       message: "Version Bump to #{buildNumber} [ci-skip]",
@@ -66,6 +66,9 @@ platform :ios do
     
     push_to_git_remote
   end
+
+
+
 
   desc "Take screenshots on all devices"
   lane :screens do
